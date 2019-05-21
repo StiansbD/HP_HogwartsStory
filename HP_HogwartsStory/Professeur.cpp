@@ -2,7 +2,7 @@
 #include "Professeur.h"
 
 
-Professeur::Professeur(string n, string p, string t, string c) : Personnage(n, p, t)
+Professeur::Professeur(string n, string p, string t, string c) : Sorcier(n, p, t)
 {
 	cours = c;
 }

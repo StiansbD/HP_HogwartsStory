@@ -1,12 +1,11 @@
 #pragma once
-#include "Personnage.h"
+#include "Sorcier.h"
 
 class Etudiant :
-	public Personnage
+	public Sorcier
 {
 public:
-	Etudiant(string n, string p, string t);
-	void DefineHouse(string h);
+	Etudiant(string n, string p, string t, string h);
 	string GetHouse();
 	string Learn(string s);
 	~Etudiant();

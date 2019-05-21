@@ -2,11 +2,7 @@
 #include "Etudiant.h"
 
 
-Etudiant::Etudiant(string n, string p, string t) : Personnage(n, p, t)
-{
-}
-
-void Etudiant::DefineHouse(string h) 
+Etudiant::Etudiant(string n, string p, string t, string h) : Sorcier(n, p, t)
 {
 	house = h;
 }
@@ -18,7 +14,7 @@ string Etudiant::GetHouse()
 
 string Etudiant::Learn(string s)
 {
-	return GetFirstname() + " a appris le sort " + s;
+	return "learn " + s;
 }
 
 Etudiant::~Etudiant()

@@ -1,8 +1,8 @@
 #pragma once
-#include "Personnage.h"
+#include "Sorcier.h"
 
 class Professeur :
-	public Personnage
+	public Sorcier
 {
 public:
 	Professeur(string n, string p, string t, string c);
